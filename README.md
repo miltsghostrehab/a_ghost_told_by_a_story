@@ -10,7 +10,7 @@ The game pulls from the following 4 existing novels, currently available on The 
 _I have not chosen these for any particular reason; I don't think I've even read any of them. The resulting combination seems to create novels with a kind of...sexuality though._
 
 ## OBJECT OF THE GAME/GAME DESCRIPTION
-You are a writer. Well, you want to be a writer. Or, that is you want to be known as a writer...without actually writing anything. The ghostly computer program  known as Joss wants to help. They will randomly generate lines and paragraphs using the works of classic authors. Every once in a while, you are allowed a choice between two potential paragraphs and then watch as Joss creates a "masterpiece" in your name. Watch in wonder as Joss creates each line, paragraph, chapter and even your pen-name!
+>You are a writer. Well, you want to be a writer. Or, that is you want to be known as a writer...without actually writing anything. The ghostly computer program  known as Joss wants to help. They will generate lines and paragraphs ~~using~~ inspired by the works of classic authors. Every once in a while, you are allowed a choice between two potential paragraphs; then watch as Joss creates a "masterpiece" in your name. Watch in wonder as Joss creates each line, paragraph, chapter and even your pen-name!
 
 ## NAMES OF CONTROLLER PARTS AND OPERATING INSTRUCTIONS
 This is a single player experience.
