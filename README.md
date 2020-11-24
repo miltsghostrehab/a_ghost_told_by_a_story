@@ -21,5 +21,5 @@ This is a single player experience.
 |***LEFT MOUSE BUTTON*** | Choose between two paragraphs / Continue story when prompted|
 
 Title Music: ["Moonlight Reprise" by Kai Engel](https://freemusicarchive.org/music/Kai_Engel/Irsens_Tale)  
-Background (in-game): [Apollo 12 moon landing, just before they landed](https://archive.org/details/Apollo12Audio/372-AAA.mp3) (somewhere between 2:15:00 and 2:34:00)  
+Background (in-game): [Apollo 12 moon landing _(somewhere between 2:15:00 and 2:34:00)_](https://archive.org/details/Apollo12Audio/372-AAA.mp3)  
 Sound: Me.
