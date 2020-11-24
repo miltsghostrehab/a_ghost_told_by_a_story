@@ -6,6 +6,7 @@ The game pulls from the following 4 existing novels, currently available on The 
 + [The Strange Case of Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson](https://www.gutenberg.org/ebooks/43)
 + [Frankenstein; Or, The Modern Prometheus by Mary Wollstonecraft Shelley](https://www.gutenberg.org/ebooks/84)
 + [Anthem by Ayn Rand](https://www.gutenberg.org/ebooks/1250)
+
 _I have not chosen these for any particular reason; I don't think I've even read any of them. The resulting combination seems to create novels with a kind of...sexuality though._
 
 ## OBJECT OF THE GAME/GAME DESCRIPTION
@@ -19,6 +20,6 @@ This is a single player experience.
 |***SPACE BAR*** | Continue story when prompted|
 |***LEFT MOUSE BUTTON*** | Choose between two paragraphs / Continue story when prompted|
 
-Title Music: "Moonlight Reprise" by Kai Engel
-Background (in-game): [Apollo 12 moon landing, just before they landed](https://archive.org/details/Apollo12Audio/372-AAA.mp3) (somewhere between 2:15:00 and 2:34:00)
+Title Music: ["Moonlight Reprise" by Kai Engel](https://freemusicarchive.org/music/Kai_Engel/Irsens_Tale)  
+Background (in-game): [Apollo 12 moon landing, just before they landed](https://archive.org/details/Apollo12Audio/372-AAA.mp3) (somewhere between 2:15:00 and 2:34:00)  
 Sound: Me.
