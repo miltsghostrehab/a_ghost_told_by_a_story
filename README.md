@@ -20,6 +20,19 @@ This is a single player experience.
 |***SPACE BAR*** | Continue story when prompted|
 |***LEFT MOUSE BUTTON*** | Choose between two paragraphs / Continue story when prompted|
 
+## WHERE TO FIND YOUR NOVEL
+
+[It has been saved using the "user://" folder as defined in Godot.](https://docs.godotengine.org/en/stable/tutorials/io/data_paths.html#editor-data-paths)
+
+### Sourced from Godot's documentation:
+>The editor uses different paths for user data, user settings and cache depending on the platform. By default, these paths are:
+>|Type |	Location|
+>|---|---|
+>|User data | Windows: %APPDATA%\Godot\  macOS: ~/Library/Application Support/Godot/  Linux: ~/.local/share/godot/|
+
+
+## CREDITS
+
 Title Music: ["Moonlight Reprise" by Kai Engel](https://freemusicarchive.org/music/Kai_Engel/Irsens_Tale)  
 Background (in-game): [Apollo 12 moon landing _(somewhere between 2:15:00 and 2:34:00)_](https://archive.org/details/Apollo12Audio/372-AAA.mp3)  
 Sound: Me.
