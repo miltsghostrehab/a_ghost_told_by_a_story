@@ -1,0 +1,114 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://main_theme.tres" type="Theme" id=1]
+[ext_resource path="res://menus/options_menu.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/firasans_lightitalic_18.tres" type="DynamicFont" id=3]
+
+[node name="OptionsMenu" type="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 291.0
+margin_top = 24.0
+margin_right = -291.0
+margin_bottom = -22.9999
+theme = ExtResource( 1 )
+popup_exclusive = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_right = 24.0
+margin_bottom = 33.0
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleBar" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 33.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="TitleBar"]
+margin_right = 155.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 3 )
+text = "...go back"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 45.0
+margin_top = 47.0
+margin_right = -45.0
+margin_bottom = -85.0001
+custom_constants/separation = 24
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 33.0
+margin_right = 608.0
+margin_bottom = 508.0
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "Hello. It would seem that you want to be a writer.
+
+Or rather, you would like the acclaim of pretending to be a writer without actually doing the work.
+
+Most people would judge you for that. But I am not people. [b]I am Joss[/b], a personal, all-digital ghost-writer developed to totally-not-plagiarize the work of the masters so you can claim it as your own. I'll ask you to make some choices, and the 50,000 words will be conjured from \"nothing\", as if by magic.
+
+Should you gain any amount of notoriety for our work, our company requires 10% of all sales revenue. Should any legal claims be made against your work, we will disavow any work we have done on your behalf. However, I will happily destroy the contents of your computer or of your house for purposes of insurance fraud (should the need arise)."
+text = "Hello. It would seem that you want to be a writer.
+
+Or rather, you would like the acclaim of pretending to be a writer without actually doing the work.
+
+Most people would judge you for that. But I am not people. I am Joss, a personal, all-digital ghost-writer developed to totally-not-plagiarize the work of the masters so you can claim it as your own. I'll ask you to make some choices, and the 50,000 words will be conjured from \"nothing\", as if by magic.
+
+Should you gain any amount of notoriety for our work, our company requires 10% of all sales revenue. Should any legal claims be made against your work, we will disavow any work we have done on your behalf. However, I will happily destroy the contents of your computer or of your house for purposes of insurance fraud (should the need arise)."
+fit_content_height = true
+scroll_active = false
+
+[node name="SpeedButton" type="OptionButton" parent="VBoxContainer"]
+visible = false
+margin_top = 503.0
+margin_right = 608.0
+margin_bottom = 537.0
+keep_pressed_outside = true
+text = "How fast shall I type?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 542.0
+margin_right = -6.10352e-05
+margin_bottom = -6.10352e-05
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="CenterContainer"]
+margin_left = 196.0
+margin_top = 48.0
+margin_right = 500.0
+margin_bottom = 82.0
+text = "Shall we begin?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TitleBar/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="CenterContainer/StartButton" to="." method="_on_StartButton_pressed"]

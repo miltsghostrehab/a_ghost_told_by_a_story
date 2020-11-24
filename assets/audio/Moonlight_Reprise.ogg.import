@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Moonlight_Reprise.ogg-294715f26284f0007bc505545f5a0754.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/Moonlight_Reprise.ogg"
+dest_files=[ "res://.import/Moonlight_Reprise.ogg-294715f26284f0007bc505545f5a0754.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,314 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://story_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/fonts/firasans_lightitalic_18.tres" type="DynamicFont" id=2]
+[ext_resource path="res://reader/reader.gd" type="Script" id=3]
+[ext_resource path="res://chapter_theme.tres" type="Theme" id=4]
+[ext_resource path="res://main_subtitle_theme.tres" type="Theme" id=5]
+[ext_resource path="res://chapter_sub_theme.tres" type="Theme" id=6]
+[ext_resource path="res://main_title_theme.tres" type="Theme" id=7]
+[ext_resource path="res://title_bar_theme.tres" type="Theme" id=8]
+[ext_resource path="res://assets/audio/typing_2_C.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/closing_4.wav" type="AudioStream" id=10]
+[ext_resource path="res://assets/audio/closing_1.wav" type="AudioStream" id=11]
+
+[node name="Reader" type="Popup"]
+visible = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 291.0
+margin_top = 24.0
+margin_right = -291.0
+margin_bottom = -22.9999
+theme = ExtResource( 1 )
+popup_exclusive = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = -291.0
+margin_top = -24.0
+margin_right = -267.0
+margin_bottom = 2.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="NumberOfWords" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = 14.0
+margin_right = -14.0
+margin_bottom = 30.0
+theme = ExtResource( 8 )
+custom_colors/font_color = Color( 0.929412, 0.929412, 0.929412, 0.176471 )
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Displays" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = -188.0
+
+[node name="TextDisplay" type="RichTextLabel" parent="Displays"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+meta_underlined = false
+text = "Est doloremque asperiores quo necessitatibus praesentium. Impedit architecto enim molestias quis molestiae tempora. Magni sed quia aliquam recusandae temporibus deserunt est est. Omnis voluptatum nihil ea doloribus sit hic. Vel ut voluptatem corrupti voluptates corrupti. Magni ut quam velit voluptas beatae. Asperiores error aut eos. Sed debitis omnis nulla numquam tempore consequuntur veniam reiciendis."
+
+[node name="ChapterDisplay" type="Label" parent="Displays"]
+anchor_right = 1.0
+margin_bottom = 160.0
+theme = ExtResource( 4 )
+text = "Chapter X:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChapterTitleDisplay" type="Label" parent="Displays"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -281.0
+theme = ExtResource( 6 )
+text = "Here is a title"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContinueNotify" type="RichTextLabel" parent="Displays"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 491.0
+margin_bottom = 93.9999
+bbcode_enabled = true
+bbcode_text = "[center][wave](click to continue)[/wave][/center]"
+text = "(click to continue)"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BookStartDisplay" type="Control" parent="Displays"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 158.0
+
+[node name="BookTitle" type="Label" parent="Displays/BookStartDisplay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -331.0
+theme = ExtResource( 7 )
+text = "The Book's Title Is Here!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BookSubtitle" type="Label" parent="Displays/BookStartDisplay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 43.0
+margin_top = 296.0
+margin_right = -43.0
+margin_bottom = -66.0
+theme = ExtResource( 5 )
+text = "Here is a big long subtitle to keep you interested or whatever..."
+align = 3
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BookAuthor" type="Label" parent="Displays/BookStartDisplay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 587.0
+text = "by The Book's Author, Duh!"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SelectionButtons" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 439.0
+margin_bottom = -0.00012207
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceA" type="Button" parent="SelectionButtons"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -167.0
+margin_bottom = -141.0
+text = "Here is the first choice"
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceB" type="Button" parent="SelectionButtons"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -127.0
+margin_bottom = -101.0
+text = "Here is the second choice"
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceExit" type="Button" parent="SelectionButtons"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -62.0
+margin_bottom = -40.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.5, 0.425, 0.425, 1 )
+custom_colors/font_color_hover = Color( 0.5, 0.392667, 0.385, 1 )
+custom_colors/font_color_pressed = Color( 0.59, 0.582035, 0.1121, 1 )
+text = "(I think we've written enough)"
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitScreens" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -283.0
+margin_top = -18.0
+margin_right = 283.0
+margin_bottom = 17.9999
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Leaving" type="Popup" parent="ExitScreens"]
+visible = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="ExitScreens/Leaving"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ExitScreens/Leaving/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 17.0
+margin_top = 210.0
+margin_right = -632.0
+margin_bottom = -361.0
+rect_scale = Vector2( 2, 2 )
+bbcode_enabled = true
+bbcode_text = "[center]Good day. I shall see you again soon.
+
+
+
+Sleep well ;-)[/center]"
+text = "Good day. I shall see you again soon.
+
+
+
+Sleep well ;-)"
+
+[node name="ClickToQuit" type="RichTextLabel" parent="ExitScreens/Leaving/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 17.0
+margin_top = 609.181
+margin_right = -632.0
+margin_bottom = -62.8193
+rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0.929412, 0.929412, 0.929412, 0.156863 )
+bbcode_enabled = true
+bbcode_text = "[center](Click to quit)[/center]"
+text = "(Click to quit)"
+
+[node name="Congratulations" type="Popup" parent="ExitScreens"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="ExitScreens/Congratulations"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ExitScreens/Congratulations/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 158.0
+margin_right = -633.0
+margin_bottom = -355.0
+rect_scale = Vector2( 2, 2 )
+bbcode_enabled = true
+bbcode_text = "[center]Congratulations.
+You have finished your first novel.
+Well done.
+
+
+We hope you enjoy prosperity. Thank you for playing this game.[/center]"
+text = "Congratulations.
+You have finished your first novel.
+Well done.
+
+
+We hope you enjoy prosperity. Thank you for playing this game."
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="StartMusic" type="AudioStreamPlayer" parent="Audio"]
+
+[node name="Ambient" type="AudioStreamPlayer" parent="Audio"]
+
+[node name="Typing" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 9 )
+
+[node name="ChapterNum" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 10 )
+volume_db = -12.831
+
+[node name="ChapterTitle" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 11 )
+volume_db = -12.831
+[connection signal="pressed" from="SelectionButtons/ChoiceA" to="." method="_on_ChoiceA_pressed"]
+[connection signal="pressed" from="SelectionButtons/ChoiceB" to="." method="_on_ChoiceB_pressed"]
+[connection signal="pressed" from="SelectionButtons/ChoiceExit" to="." method="_on_ChoiceExit_pressed"]

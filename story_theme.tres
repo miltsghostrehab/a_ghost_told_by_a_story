@@ -1,0 +1,36 @@
+[gd_resource type="Theme" load_steps=7 format=2]
+
+[ext_resource path="res://assets/fonts/firasans_italic_18.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/fonts/josefin_slab_24.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/btn_normal.tres" type="StyleBox" id=3]
+[ext_resource path="res://assets/btn_hover.tres" type="StyleBox" id=4]
+[ext_resource path="res://assets/pan_default.tres" type="StyleBox" id=5]
+[ext_resource path="res://assets/btn_disabled.tres" type="StyleBox" id=6]
+
+[resource]
+default_font = ExtResource( 2 )
+Button/colors/font_color = Color( 0.980392, 0.447059, 0.407843, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_hover = Color( 0.741176, 0.462745, 0.407843, 1 )
+Button/colors/font_color_pressed = Color( 0.784314, 0.788235, 0.717647, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = ExtResource( 1 )
+Button/styles/disabled = ExtResource( 6 )
+Button/styles/focus = ExtResource( 3 )
+Button/styles/hover = ExtResource( 4 )
+Button/styles/normal = ExtResource( 3 )
+Button/styles/pressed = ExtResource( 3 )
+OptionButton/colors/font_color = Color( 0.929412, 0.929412, 0.929412, 1 )
+OptionButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+OptionButton/colors/font_color_hover = Color( 0.572549, 0.572549, 0.592157, 1 )
+OptionButton/colors/font_color_pressed = Color( 0.784314, 0.788235, 0.717647, 1 )
+OptionButton/constants/arrow_margin = 2
+OptionButton/constants/hseparation = 2
+OptionButton/fonts/font = null
+OptionButton/icons/arrow = null
+OptionButton/styles/disabled = ExtResource( 6 )
+OptionButton/styles/focus = ExtResource( 3 )
+OptionButton/styles/hover = ExtResource( 4 )
+OptionButton/styles/normal = ExtResource( 3 )
+OptionButton/styles/pressed = ExtResource( 3 )
+Panel/styles/panel = ExtResource( 5 )
